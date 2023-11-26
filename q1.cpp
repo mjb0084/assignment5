@@ -8,7 +8,7 @@ int main(void){
     cin.getline(input,101);
     int i=0;
     bool cont=1;
-
+// test
     do{
         if (i==0){input[0]=toupper(input[0]);}
         else{
