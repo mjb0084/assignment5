@@ -18,6 +18,7 @@ int smallerValue(int num1, int num2);
 int cString2Int(char number[100],int count);
 
 
+
 int main(void){
     ifstream inStream1,inStream2;
     ofstream outStream;
@@ -124,83 +125,3 @@ int cString2Int(char number[100],int count){
     }
     return num;
 }
-
-
-// char next1,next2;
-    // int count1, count2,num1,num2;
-    // char number1[100],number2[100];
-
-    // count1=0;
-    // count2=0;
-    // int final =0;
-    // // read through both files simultaneously and compare values sequentially. The higher of the two gets written to output
-    // inStream1.get(next1);
-    // inStream2.get(next2);
-    // while((!inStream1.eof()||!inStream2.eof())){
-    //     // count how many chars make up the integer
-
-    //     while((next1!='\n')&&!inStream1.eof()){
-    //         number1[count1]=next1;
-    //         count1++;
-    //         inStream1.get(next1);
-    //     }
-
-    //     // convert number to int
-    //     num1 = cString2Int(number1,count1);
-
-    //     // count how many chars make up the second integer
-    //     while((next2!='\n')&&!inStream2.eof()){
-    //         number2[count2]=next2;
-    //         count2++;
-    //         inStream2.get(next2);
-    //     }
-
-    //     // convert number to int
-    //     num2 = cString2Int(number2,count2);
-
-    //     if (inStream1.eof()&&(final>1)){
-    //         outStream << num1<<"\n";
-    //     }
-
-    //     // if file1.eof() write the rest of file2
-    //     if (inStream1.eof()){
-    //         if (final<1){outStream <<num1 << "\n";}
-    //         outStream << num2 << "\n";
-    //         count2=0;
-    //         num2=0;
-    //         inStream2.get(next2);
-    //         final++;
-    //     }
-
-    //     // if file2.eof() write the rest of file1
-    //     else if (inStream2.eof()){
-    //         if (final<1){outStream <<num2 << "\n";}
-    //         outStream << num1 << "\n";
-    //         count1=0;
-    //         num1=0;
-    //         inStream1.get(next1);
-    //         final++;
-    //     }
-
-    //     else {
-    //         // compare the two integer values and write the lower one to output
-    //         if (num1<=num2) {
-    //             outStream << num1 << "\n";
-    //             count1=0;
-    //             num1=0;
-    //             inStream1.get(next1);
-    //     }
-
-    //     // compare the two integer values and write the lower one to output
-    //         if (num2<num1){
-    //             outStream << num2 << "\n";
-    //             count2=0;
-    //             num2=0;
-    //             inStream2.get(next2);
-    //     }
-    //     }
-
-
-        
-        
-    // }
